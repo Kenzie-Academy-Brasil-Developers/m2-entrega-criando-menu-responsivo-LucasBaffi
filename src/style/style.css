@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Inter:wght@100;200;300;400&family=Roboto+Slab:wght@100;200;300;400&display=swap");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray);
+  margin: 20px 20px 0 20px;
+  height: 45px;
+}
+.header > h1 {
+  max-width: 100%;
+  color: var(--blue);
+  font-style: Medium;
+  font-size: 25px;
+}
+
+.header > img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--grayLigth);
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+}
+
+.list-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  transition: 1s ease;
+}
+.item-input > input {
+  width: 100%;
+  height: 31px;
+  border: 1px solid var(--whiteGray);
+  border-radius: 5px;
+}
+
+.submit-lente {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.link-nav-exemplo {
+  color: black;
+}
+
+.item-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.menu {
+  display: flex;
+}
+.show_modal {
+  display: none;
+}
+
+.menu .modal_box {
+  animation: modalAnimation 1.2s;
+}
+
+@keyframes modalAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .header > img {
+    display: none;
+  }
+  body{
+    display: flex;
+  }
+  .list-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    margin-top: 15px;
+    border-bottom: 1px solid var(--gray);
+    gap: 104px;
+  }
+p{
+    display: none;
+}
+.profile{
+    justify-content: flex-end;
+
+}
+.show_modal{
+    display: flex;
+  }
+  .item-input{
+    margin-left: 100px;
+    width: 143px;
+
+  }
+  
+}

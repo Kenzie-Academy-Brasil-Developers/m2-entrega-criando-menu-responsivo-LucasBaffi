@@ -1,0 +1,26 @@
+body, main, figure, img , figcaption, form, label, input, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+:root{
+    --white:#FFFFFF;
+    --blue:#364FC7;
+    --gray:#E9ECEF;
+    --grayLigth:#868E96;
+    --grayWhite:#F1F3F5;
+    --whiteGray:    #dadbdc;
+}
+
+body{
+    height: 100vh;
+    font-family: "  Inter", sans-serif;
+}
